@@ -1,0 +1,69 @@
+/* FreeConsultationPage.css */
+
+.free-consultation-page {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .free-consultation-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bggetfree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  .page-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0a29f0;
+  }
+  
+  .big-text {
+    font-size: 7rem;
+    margin-bottom: 30px;
+    color: #140393;
+    text-shadow:2px 2px #000;
+  }
+  
+  .get-started-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .get-started-button {
+    background-color: #1146e5eb;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .page-heading {
+      font-size: 2.5rem;
+    }
+  
+    .big-text {
+      font-size: 5rem;
+    }
+  }
+  

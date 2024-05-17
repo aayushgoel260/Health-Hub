@@ -1,0 +1,133 @@
+.Community {
+  background-color: #d8d5d5;
+}
+
+.New {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #140393;
+  margin-left: 22rem;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: #a09c9c;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.problem-list {
+  margin-top: 20px;
+}
+
+.problem-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.add-problem {
+  margin-top: 20px;
+  display: flex;
+}
+
+.add-problem input {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.add-problem button {
+  padding: 5px;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.no-problem-selected {
+  text-align: center;
+  margin-top: 50px;
+  color: #716a6a;
+  font-size: 1.5rem;
+}
+
+.chat {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message {
+  background-color: #65a9f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.input-message {
+  margin-top: 20px;
+  display: flex;
+}
+
+.input-message input {
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-message button {
+  padding: 10px;
+}
+
+.explanation {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #3043f4;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+.explanation h2{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #d91c1c;
+}
+@media (min-width: 768px) {
+  .New {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 300px;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .explanation {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .chat {
+    height: 400px;
+  }
+}

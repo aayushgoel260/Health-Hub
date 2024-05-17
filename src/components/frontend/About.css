@@ -1,0 +1,70 @@
+.working-process {
+    position: relative; /* Ensure positioning context for pseudo-element */
+    text-align: center;
+    min-height: 100vh;
+}
+
+.working-process::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bggabout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.main-heading {
+    color: #0c077c;
+    font-size: 4rem;
+    /* You might want to adjust z-index if needed */
+}
+
+.process-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+}
+
+.heading-text {
+    color: #3e3d83;
+}
+
+.process-photo {
+    flex-basis: calc(25% - 20px); /* Adjust the width according to your preference */
+    margin: 10px;
+}
+
+.process-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.hover-effect:hover {
+    opacity: 0.8; /* Change the opacity on hover */
+    transform: scale(1.1); /* Scale the image up on hover */
+    transition: opacity 0.3s, transform 0.3s; /* Add smooth transition */
+}
+
+.process-photo p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .process-photo {
+        flex-basis: calc(50% - 20px); /* 2 photos per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .process-photo {
+        flex-basis: calc(100% - 20px); /* 1 photo per row on even smaller screens */
+    }
+}
